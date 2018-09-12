@@ -63,7 +63,8 @@
     var update = function() {
       var scale = Math.min(window.innerWidth/1.4, window.innerHeight/1.4) / nativeSize
       element.style.transform = element.style.webkitTransform = 'scale(' + scale.toFixed(3) + ')'
+	  console.log('2333')
     }
-    update()
+    update() //保证不用手动刷新即可实现样式的调整 
     window.addEventListener('resize', update)
   }
